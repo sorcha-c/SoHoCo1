@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Encodes the document -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Makes visable are of the webpage able to vary with device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- STYLESHEET FROM ('Bootstrap v5.2.2', 2022, 'Bootstrap CSS Stylesheet', Open Source,  MIT License, [CSS Code], viewed Wed 19 October 2022, (https://getbootstrap.com/)) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- This links to my css file to decorate my webpage -->
+    <link rel="stylesheet" href="rework.css" >
+    <!-- This is the title of my webpage that appears in the tab bar -->
+    <title>Formative Assignment</title>
+
+</head>
+<body>
+    <!--This creates a section where the first parallax image will go, and the contents that go over it-->
+    <div class="Parallax">
+        <!-- This div keeps all of my introductory stuff together -->
+        <div class="Intro">
+
+
+            <!-- This is a button at the top of the page that I put so you can quickly access stuff nearer the bottom -->
+            <!-- It works by having a href to the id of the div it will scroll to. -->
+            <!-- It uses ID rather than class because class is not unique whereas ID is so it knows to scroll to one place. -->
+            <!-- I thought this is a better way to navigate considering the assignment specifies one page. -->
+            <a class="scroll" href="#Contact">Contact me,</a> 
+            <a class="scroll" href="#Gallery">View Gallery</a>
+
+            <!-- This is a simple title that introduces my page -->
+            <div class="Title">Sorcha's Art Page</div> 
+            <!-- This lays out the intention of my page -->
+            <div class="Intention">The aim of this page is to show my Advanced Higher Art Portfolio from 2021</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- To create the illussion that the drawing is changing colour, I used another parallax effect directly below the first-->
+    <!-- This means when you scroll down the images are displaced by the same amount so line up the same creating the illusion -->
+    <div class="Parallax2"> 
+
+        <div class="PortfolioIntro">
+            <div class="Intention">The theme of my portfolio was</div>
+            <div class="Title">REFLECTING ON LOCKDOWN</div>
+        </div>
+
+    </div>
+    
+    <!-- This is the beginning of the section that will have all of my images -->
+    <div class="GalleryIntro" id="Gallery">
+
+        <!-- The description incorporates a. This is an <a> which is an anchor tag that defines a hyperlink -->
+        <!-- It links you to the section it talks about by having a href to the id of the div it references -->
+        <div class="description">
+            My theme was broken down into 2 parts, <a href="#Reflection" class="scroll">'Reflection Imagery'</a> and <a href="#Lockdown"class="scroll">'Lockdown Imagery'</a> before coming together and <a href="#Combined" class="scroll">Combining</a>.
+        </div>
+    </div>
+
+
+
+    <!--This begins the first section of the gallery about reflections -->
+    <div class="GalleryContainer" id="Reflection">
+ 
+        <div class="SectionIntro" >Reflection Imagery</div>
+        <div class="DescriptionIntro">This explored the medium of literal reflections of light and the concept of thinking back.</div>
+
+        <!-- I create a class of rows and columns to create a grid structure -->
+        <!-- For each grid there are 3 columns -->
+        <div class="row">
+            <div class="column">
+                <!-- This is an anchor tag which opens the image in the same tab by using target="_top" -->
+                <a href="Images/Reflection/BrokenMirror.jpg" target="_top">
+                    <img src="Images/Reflection/BrokenMirror.jpg">
+                </a>
+                
+                <a href="Images/Reflection/PencilMirror.jpg" target="_top">   
+                    <img src="Images/Reflection/PencilMirror.jpg">
+                </a> 
+            </div>
+            
+            <div class="column">
+                <a href="Images/Reflection/Illusion.png" target="_top">  
+                    <img src="Images/Reflection/Illusion.png">
+                </a>
+                <a href="Images/Reflection/HandReflection.jpg" target="_top">  
+                    <img src="Images/Reflection/HandReflection.jpg">
+                </a>
+            </div>
+
+            <div class="column">
+                <a href="Images/Reflection/Yeo.jpg" target="_top">  
+                    <img src="Images/Reflection/Yeo.jpg">
+                </a>
+                <a href="Images/Reflection/WashingHands.jpg" target="_top">  
+                    <img src="Images/Reflection/WashingHands.jpg">
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- This is the new container of the second section of images -->
+    <!-- It uses the same format as the above section -->
+    <div class="GalleryContainer" id="Lockdown">
+        <div class="SectionIntro">Lockdown Imagery</div>
+        <div class="DescriptionIntro">This looked into the key images of lockdown like masks and hand sanitiser.</div>
+        <div class="row">
+            <div class="column">
+                <a href="Images/Lockdown/20220207_102703 (2).jpg" target="_top">
+                    <img src="Images/Lockdown/20220207_102703 (2).jpg">
+                </a>
+            </div>
+            <div class="column">
+                <a href="Images/Lockdown/HoldingSanitiser.jpg" target="_top">
+                    <img src="Images/Lockdown/HoldingSanitiser.jpg">
+                </a>
+            </div>
+            <div class="column">
+                <a href="Images/Lockdown/HoldingMask.jpg" target="_top">
+                    <img src="Images/Lockdown/HoldingMask.jpg">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- The final section of the gallery -->
+    <div vlass="GalleryContainer" id="Combined">
+        <div class="SectionIntro">'Reflecting' and 'Lockdown'</div>
+        <div class="DescriptionIntro">This combined the two earlier themes to showcase my theme of Reflecting on Lockdown.</div>
+        <div class="row">
+            <div class="column">
+                <a href="Images/BothCombined/BrokenMirror.jpg" target="_top">
+                    <img src="Images/BothCombined/BrokenMirror.jpg">
+                </a>
+                <a href="Images/BothCombined/ColouredPencil.jpg" target="_top">
+                    <img src="Images/BothCombined/ColouredPencil.jpg">
+                </a>
+                <a href="Images/BothCombined/Repeat.jpg" target="_top">
+                    <img src="Images/BothCombined/Repeat.jpg">
+                </a>
+            </div>
+            <div class="column">
+                <a href="Images/BothCombined/LookingDown.jpg" target="_top">
+                    <img src="Images/BothCombined/LookingDown.jpg">
+                </a>
+                    <a href="Images/BothCombined/Multiple.jpg" target="_top">
+                <img src="Images/BothCombined/Multiple.jpg" >
+                </a>
+                <a href="Images/BothCombined/PickingUpMask.jpg" target="_top">
+                    <img src="Images/BothCombined/PickingUpMask.jpg">
+                </a>
+            </div>
+            <div class="column">
+                <a href="Images/BothCombined/reflection.png" target="_top">
+                    <img src="Images/BothCombined/reflection.png">
+                </a>
+                <a href="Images/BothCombined/Glitch.jpg" target="_top">
+                    <img src="Images/BothCombined/Glitch.jpg">
+                </a>
+                <a href="Images/BothCombined/Tanya Shatseva 1.png" target="_top">
+                    <img src="Images/BothCombined/Tanya Shatseva 1.png">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--CODE FOR CONTACT FORM ADAPTED FROM:
+        ('MDB GO', 2015, 'Bootstrap contact Form', Open Source, Bootstrap (v.4), MIT License, [HTML & CSS Code], viewed Wed 19 October 2022, (https://mdbootstrap.com/docs/b4/jquery/forms/contact/)) -->
+    <section class="mb-4">
+
+        <!--Section heading-->
+        <div class="SectionIntro" id="Contact">Contact Me</div>
+        <!--Section description-->
+        <p class="text-center w-responsive mx-auto mb-5">Do you like my art? Want to request a commission? Fill in my form and I will be back with you shortly.</p>
+    
+        <div class="row">
+    
+            <!--Grid column-->
+            <div class="col-md-9 mb-md-0 mb-5">
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+    
+                    <!--Grid row-->
+                    <div class="row">
+    
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="name" name="name" class="form-control">
+                                <label for="name" class="">Your name</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+    
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="email" name="email" class="form-control">
+                                <label for="email" class="">Your email</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+    
+                    </div>
+                    <!--Grid row-->
+    
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form mb-0">
+                                <input type="text" id="subject" name="subject" class="form-control">
+                                <label for="subject" class="">Subject</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Grid row-->
+    
+                    <!--Grid row-->
+                    <div class="row">
+    
+                        <!--Grid column-->
+                        <div class="col-md-12">
+    
+                            <div class="md-form">
+                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                <label for="message">Your message</label>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <!--Grid row-->
+    
+                </form>
+    
+                <div class="text-center text-md-left">
+                    <a class="btn btn-primary">Send</a>
+                </div>
+                <div class="status"></div>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-md-3 text-center">
+                <ul class="list-unstyled mb-0">
+                    <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                        <p>Sorcha Corrigan, FAKE ADDRESS, FAKE ADDRESS, ABC 123</p>
+                    </li>
+    
+                    <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                        <p>nbxj84@durham.ac.uk</p>
+                    </li>
+                </ul>
+            </div>
+
+    
+        </div>
+    
+    </section>
+
+</body>
+</html>

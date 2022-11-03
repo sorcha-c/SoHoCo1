@@ -1,0 +1,146 @@
+
+/* This means when you click on the navigation buttons it scrolls slowly towards the specified section */
+html {
+  scroll-behavior:smooth;
+}
+
+
+/* I decided to use a more formal font and so set the body to the fonts below */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* This is where I create the background Parallax effect */
+/* It is done by moving the background at a different speed to the rest of the webpage */
+/* CODE FOR PARALLAX EFFECT ADAPTED FROM:
+  ('W3 schools', 2022, 'How TO - Parallax Scrolling', Refsnes Data, [HTML & CSS code], viewed Mon 17th October 2022, (https://www.w3schools.com/howto/howto_css_parallax.asp)) */
+.Parallax {
+    background-image: url(Images/FinalPiece2.png);
+    height: 900px;
+    background-attachment: fixed;
+      /* This keeps the image in the center */
+    background-position: center;
+      /* This means the background does not repeat and ends at the bottom of the image */
+    background-repeat: no-repeat;
+      /* This makes it cover the page */
+    background-size: cover;
+}
+
+/* Second parallax with seperate image */
+/* It is the same size so that it merges with the above effect */
+.Parallax2 {
+    background-image: url(Images/FINAL\ PIECE\ 1\ \(2\).png);
+    height: 900px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* For all the large titles */
+.Title {
+    width: 100%;
+    font-size: 500%;
+    text-align: center;
+    color:rgb(255, 234, 142);
+
+}
+
+/* This is for text slightly smaller than the title - e.g. a subtitle */
+.Intention {
+    width: 100%;
+    font-size: 200%;
+    text-align: center;
+    color:rgb(255, 243, 191);
+}
+
+/* This is the scolling buttons */
+.scroll{
+  color:rgb(247, 223, 89);
+  transition: font-size 0.2s;
+}
+
+/* To make it more intuitive to click, the text gets larger over the navigation buttons when you hover over it */
+.scroll:hover {
+  color: goldenrod;
+  font-size: 105%;
+}
+
+/* This is just the intro to the gallery. */
+.GalleryIntro {
+  /* The height acts as a divider and creates some space between the introduction and the first section of the gallery */
+  height: 100px;
+}
+
+/* For each section I wanted the title of the section to stick to the top of the page */
+.PortfolioIntro {
+    /* Making it sticky makes it stick to the top */
+    position:sticky;
+    /* It sticks when it hits 0px from the top */
+    top:0px;
+    /* I gave a slightly dark background so you can easily see the text and create a divide between the two images */
+    background-color: black;
+    opacity: 60%;
+}
+
+/* The Title of each of the sections in my gallery */
+.SectionIntro {
+    width: 100%;
+    font-size: 200%;
+    text-align: center;
+    color:black;
+    position:sticky;
+    top:0px;
+    background-color: white;
+}
+
+/* The description below each title for my gallery */
+.description {
+  text-align: center;
+  font-size: 100%;
+}
+.DescriptionIntro {
+  text-align: center;
+  font-size: 80%;
+  color: rgba(0, 0, 0, 0.534);
+}
+
+/* CODE ADAPTED FROM:
+  ('W3 schools', 2022, 'How TO - Responsive Image Grid', Refsnes Data, [HTML & CSS code], viewed Tue 25th October 2022, (https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp))*/
+.row {
+    display: flex;      
+    flex-wrap: wrap;    /* this stops overflow  of columns*/
+    padding: 5%; 
+  }
+  
+
+  .column {
+    /* Dividing the page into 3 coloumns gives you 100/3 which is 33.33% */
+    flex: 33.33%;
+    max-width: 33.33%;
+    /* The padding gives space between the pages */
+    padding: 1%;
+  }
+
+  
+  .column img {
+    margin-top: 1%;
+    vertical-align: middle;
+    width: 100%;
+    transition: width 0.1s;
+  }
+
+  /* When you put your mouse over one of the images it increases in size */
+  /* This makes it more intuitive for you to know to click onto it */
+  .column img:hover {
+    width: 105%;
+  }
+  
+  /* This makes it so when the device width changes to about that of a phone or you just make the tab smaller */
+  /* then the columns change so there is only one column */
+  @media screen and (max-width: 700px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
