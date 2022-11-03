@@ -11,7 +11,7 @@ body {
 }
 
 /*Stops overflow on phones */
-html,body{
+html, body{
   overflow-x: hidden;
 }
 /* This is where I create the background Parallax effect */
