@@ -10,6 +10,10 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+/*Stops overflow on phones */
+html,body{
+  overflow-x: hidden;
+}
 /* This is where I create the background Parallax effect */
 /* It is done by moving the background at a different speed to the rest of the webpage */
 /* CODE FOR PARALLAX EFFECT ADAPTED FROM:
@@ -142,5 +146,10 @@ body {
     .column {
       flex: 100%;
       max-width: 100%;
+      
+     
+    .Title {
+      font-size: 350%;
     }
+    
   }
